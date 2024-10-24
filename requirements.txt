@@ -1,0 +1,10 @@
+Flask==2.3.2
+requests==2.31.0
+transformers==4.33.0
+torch==2.5.0
+matplotlib==3.8.0
+SpeechRecognition==3.10.0
+alpha_vantage
+huggingface-hub==0.17.3
+langchain==0.0.258
+flask-cors
