@@ -1,0 +1,61 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2f2f2; 
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.or-text {
+    margin: 20px 0;
+    color: #777;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-button {
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.social-button img {
+    width: 24px; 
+}
+
+.login-button {
+    background-color: #007bff; 
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}

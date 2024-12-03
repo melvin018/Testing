@@ -1,0 +1,127 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Adjust width as needed */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.social-button img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.google {
+    color: #db4437; /* Google red */
+}
+
+.facebook {
+    color: #4267b2; /* Facebook blue */
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.separator hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.separator span {
+    margin: 0 10px;
+    color: #777;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 40px; /* Adjust based on your form layout */
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.password-toggle img {
+    width: 20px;
+}
+
+.create-account-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+}
+
+.login-link a {
+    color: #007bff; /* Example blue color */
+    text-decoration: none;
+}
