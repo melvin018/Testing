@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="static\register.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Create account</h2>
+        
+        
+        <div class="social-buttons">
+            <button class="social-button google">
+                <img src="static\google-icon.svg" alt="Sign up with Google">
+                Sign up with Google
+            </button>
+            <button class="social-button facebook">
+                <img src="static\facebook-icon.svg" alt="Sign up with Facebook">
+                Sign up with Facebook
+            </button>
+            <button class="social-button apple">
+                <img src="static\apple-icon.svg" alt="Sign up with apple">
+                Sign up with apple 
+            </button>
+        </div>
+
+        <div class="separator">
+            <hr>
+            <span>OR</span>
+            <hr>
+        </div>
+
+        <form>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" value="johndoe@mail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" value="•••••••••" required>
+                <button type="button" class="password-toggle">
+                    <img src="static\eye-icon.svg" alt="Toggle Password Visibility">
+                </button>
+            </div>
+
+            <button type="submit" class="create-account-button">Create Account</button>
+        </form>
+
+        <p class="login-link" id="login-link">Already have an account? <a href="#">Log in</a></p>
+    </div>
+
+    <script>
+        document.getElementById('login-link').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default link behavior
+    
+            // Make an API call
+            fetch('http://127.0.0.1:5000/login', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    message: "Login API triggered"
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('API call successful:', data);
+            })
+            .catch(error => {
+                console.error('Error during API call:', error);
+            });
+        });
+    </script>
+</body>
+</html>
