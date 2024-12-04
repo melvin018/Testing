@@ -19,7 +19,12 @@ CORS(app)  # Enable CORS for cross-origin requests
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('register.html')
+
+@app.route('/login',methods=['POST','GET'])
+def login():
+    return render_template('login.html')
+
 
 @app.route('/ask-question', methods=['POST'])
 def ask_question():
