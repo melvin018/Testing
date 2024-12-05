@@ -11,12 +11,12 @@
         <h2>Quantify</h2>
         <p>Let's get started</p>
 
-        <form>
+        <form action="http://127.0.0.1:5000/index" method="POST">
             <div class="form-group">
-                <input type="email" id="email" placeholder="get@ziontutorial.com" required>
+                <input type="email" name="email" id="email" placeholder="get@ziontutorial.com" required>
             </div>
             <div class="form-group">
-                <input type="password" id="password" placeholder="Password" required>
+                <input type="password" name="password" id="password" placeholder="Password" required>
             </div>
 
             <p class="or-text">Or continue with</p>
@@ -33,7 +33,7 @@
                 </button>
             </div>
 
-            <button type="submit" class="login-button">Log in</button>
+            <button type="submit" id="login-button">Log in</button>
         </form>
     </div>
 </body>

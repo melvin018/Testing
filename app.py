@@ -25,6 +25,9 @@ def home():
 def login():
     return render_template('login.html')
 
+@app.route('/index',methods=['POST','GET'])
+def index():
+    return render_template('index.html')
 
 @app.route('/ask-question', methods=['POST'])
 def ask_question():
